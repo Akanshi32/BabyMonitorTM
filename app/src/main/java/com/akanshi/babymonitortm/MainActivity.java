@@ -36,15 +36,14 @@ public class MainActivity extends AppCompatActivity {
         graph.addSeries(series);
 
         webview.setWebViewClient(new WebViewClient());
-        webview.getSettings().setJavaScriptEnabled(true);
+        /*webview.getSettings().setJavaScriptEnabled(true);
         webview.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
 
         webview.getSettings().setPluginState(WebSettings.PluginState.ON);
         webview.getSettings().setMediaPlaybackRequiresUserGesture(false);
-        webview.setWebChromeClient(new WebChromeClient());
+        webview.setWebChromeClient(new WebChromeClient());*/
         webview.loadUrl("192.168.43.83:8080");
-        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
-       
+
     }
 }
