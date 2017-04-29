@@ -17,16 +17,20 @@
             android:name=".LoginActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name=".SplashActivity"
-            android:theme="@style/AppTheme.Transparent">
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.Transparent"
+            android:hardwareAccelerated="true"
+            >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"
+        <activity android:name=".StreamActivity"
             />
+        <activity android:name=".SplashActivity" android:label="Stream"></activity>
     </application>
 
 </manifest>

@@ -8,15 +8,12 @@ import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-
-import com.google.firebase.analytics.FirebaseAnalytics;
 import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.series.DataPoint;
 import com.jjoe64.graphview.series.LineGraphSeries;
 
 public class MainActivity extends AppCompatActivity {
 
-    private FirebaseAnalytics mFirebaseAnalytics;
 
 
     @Override
@@ -42,8 +39,7 @@ public class MainActivity extends AppCompatActivity {
         webview.getSettings().setPluginState(WebSettings.PluginState.ON);
         webview.getSettings().setMediaPlaybackRequiresUserGesture(false);
         webview.setWebChromeClient(new WebChromeClient());
-        webview.loadUrl("192.168.43.83:8080");
-        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
+        webview.loadUrl("http://192.168.43.83:8080");
 
        
     }
