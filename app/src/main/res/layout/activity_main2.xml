@@ -18,7 +18,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#d5757b9f"/>
+        android:background="#bb707593"/>
 
     <ImageView
         android:layout_width="wrap_content"
